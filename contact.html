@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>オリジナルサイト</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ファビコン表示確認！！ -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-contact">
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <a href="index.html"><img src="img/logo-b.png" alt="la Cachette"></a>
+            </h1>
+
+            <nav id="navi">
+                <ul>
+                    <li><a href="index.html">Top</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#access">Access</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="section-title">Contact</div>
+
+        <div class="wrapper">
+            <form action="#">
+                <div class="name">
+                    <dl>
+                        <dt><label for="first-name">姓</label></dt>
+                        <dd><input type="text" name="first-name" id="first-name" required></dd>
+                    </dl>
+                    <dl>
+                        <dt><label for="last-name">名</label></dt>
+                        <dd><input type="text" name="last-name" id="last-name" required></dd>
+                    </dl>
+                </div>
+                <dl class="gender">
+                    <dt>性別</dt>
+                    <dd>
+                        <input type="radio" id="gender-male" name="gender" value="male" required>
+                        <label for="gender-male">男</label>
+
+                        <input type="radio" id="gender-female" name="gender" value="female">
+                        <label for="gender-female">女</label>
+
+                        <input type="radio" id="gender-other" name="gender" value="other">
+                        <label for="gender-other">その他</label>
+                    </dd>
+                </dl>
+
+
+                <dl>
+                    <dt><label for="email">メールアドレス</label></dt>
+                    <dd><input type="email" id="email" name="email" required></dd>
+                </dl>
+                <dl>
+                    <dt><label for="message">お問い合わせ内容</label></dt>
+                    <dd><textarea name="message" id="message" required></textarea></dd>
+                </dl>
+
+                <div class="btn">
+                    <button type="submit"><span class="text">Send to Message</span></button>
+                </div>
+            </form>
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;2025 La Cachette</p>
+    </footer>
+</body>
+
+</html>
